@@ -6,30 +6,30 @@ A simple "Hello, World!" RESTful web service built using Node.js and Express.
 
 These instructions will help you set up and run the project on your local machine.
 
-### Prerequisites
-
-You need to have the following installed on your system:
-
-- [Node.js](https://nodejs.org/) (v14.x or later)
-- [Yarn](https://yarnpkg.com/)
-
 ### Installation
 
 1. Clone the repository or download the project files.
 
 2. Navigate to the project directory:
 
-   ```bash
-   cd path/to/your/project
-   ```
+```bash
+cd path/to/your/project
+```
 
-3. Install dependencies
+3. Build the service:
 
-   ```bash
-   yarn install
-   ```
+```bash
+docker build --no-cache -t hello-world-express:v1 .
+```
 
-4. Run the app
-   ```bash
-   yarn start
-   ```
+4. Running the Application
+
+To start the application, run:
+
+```bash
+docker run -p 3000:3000 hello-world-express:v1
+```
+
+5. **Access the Web Service:**
+
+Open your web browser and navigate to `http://localhost:3000`, and you should see the message "Hello, World!".

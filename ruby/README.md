@@ -6,30 +6,30 @@ A simple "Hello, World!" RESTful API using Sinatra.
 
 These instructions will help you set up and run the project on your local machine.
 
-### Prerequisites
-
-- [Ruby](https://www.ruby-lang.org/) (version 2.7.0 or later)
-- [Bundler](https://bundler.io/)
-
 ### Installation
 
 1. Clone the repository or download the project files.
 
 2. Navigate to the project directory:
 
-   ```bash
-   cd path/to/your/project
-   ```
+```bash
+cd path/to/your/project
+```
 
-3. Install the dependencies:
-   ```bash
-   bundle install
-   ```
+3. Build the service:
 
-Running the Application
+```bash
+docker build --no-cache -t sinatra-app:v1 .
+```
+
+4. Running the Application
 
 To start the application, run:
 
 ```bash
-ruby app.rb
+docker run -p 3000:3000 sinatra-app:v1
 ```
+
+5. **Access the Web Service:**
+
+Open your web browser and navigate to `http://localhost:3000`, and you should see the message "Hello, World!".
