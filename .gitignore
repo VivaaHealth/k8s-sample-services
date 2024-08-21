@@ -67,7 +67,6 @@ develop-eggs/
 dist/
 eggs/
 ehthumbs.db
-Gemfile.lock
 go.work
 go.work.sum
 htmlcov/
@@ -82,11 +81,9 @@ node_modules/
 nosetests.xml
 npm-debug.log*
 out/
-package-lock.json
 parts/
 pip-delete-this-directory.txt
 pip-log.txt
-poetry.lock
 pom.xml.next
 pom.xml.releaseBackup
 pom.xml.tag
@@ -103,5 +100,4 @@ vendor/bundle/
 wheels/
 yarn-debug.log*
 yarn-error.log*
-yarn.lock
 service.yaml
